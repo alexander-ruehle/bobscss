@@ -7,4 +7,6 @@
   MIT License http://opensource.org/licenses/MIT
 */
 
-@import "reset"; // normalize.css.scss v3.0.1
+@import "_reset"; // normalize.css.scss v3.0.1
+@import "_variables";
+@import "_grid";
