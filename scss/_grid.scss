@@ -179,7 +179,13 @@
 	flex-basis: auto;
 
 	@for $i from 1 through 4 {
-  		&.grow-#{$i} { flex-grow: #{$i} }
-  		&.shrink-#{$i} { flex-shrink: #{$i} }
+  		&.grow-#{$i} { 
+  			-webkit-flex-grow: #{$i};
+  			flex-grow: #{$i}; 
+  		}
+  		&.shrink-#{$i} {
+  			-webkit-flex-shrink: #{$i};
+  			flex-shrink: #{$i};  			
+  		}
 	}
 }

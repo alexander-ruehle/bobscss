@@ -548,26 +548,129 @@ td, th {
   flex-basis: auto;
 }
 .flex-item.grow-1 {
+  -webkit-flex-grow: 1;
   flex-grow: 1;
 }
 .flex-item.shrink-1 {
+  -webkit-flex-shrink: 1;
   flex-shrink: 1;
 }
 .flex-item.grow-2 {
+  -webkit-flex-grow: 2;
   flex-grow: 2;
 }
 .flex-item.shrink-2 {
+  -webkit-flex-shrink: 2;
   flex-shrink: 2;
 }
 .flex-item.grow-3 {
+  -webkit-flex-grow: 3;
   flex-grow: 3;
 }
 .flex-item.shrink-3 {
+  -webkit-flex-shrink: 3;
   flex-shrink: 3;
 }
 .flex-item.grow-4 {
+  -webkit-flex-grow: 4;
   flex-grow: 4;
 }
 .flex-item.shrink-4 {
+  -webkit-flex-shrink: 4;
   flex-shrink: 4;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+h1,
+.h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+@media screen and (min-width: 54rem) {
+  h1,
+  .h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 70rem) {
+  h1,
+  .h1 {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+strong,
+.bold {
+  font-weight: bold;
+}
+
+.regular {
+  font-weight: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.center {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+small,
+.small {
+  font-size: .875rem;
+  line-height: 1.5rem;
 }
