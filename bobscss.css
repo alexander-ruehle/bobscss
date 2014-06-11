@@ -581,9 +581,10 @@ td, th {
 }
 
 body {
+  color: #333333;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  line-height: 1.5rem;
   font-weight: 400;
+  line-height: 1.5rem;
 }
 
 h1,
@@ -714,7 +715,6 @@ small,
   transition-property: box-shadow , background-color;
   white-space: nowrap;
   background-color: white;
-  color: #333333;
 }
 .btn:hover {
   background-color: #e6e6e6;

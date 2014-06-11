@@ -20,8 +20,7 @@
   	white-space: nowrap;  	
 
   	// default
-  	background-color: $white;	
-	color: $dark-gray;	
+  	background-color: $white;
 	&:hover {
  		background-color: darken($white, 10%);
 	}
