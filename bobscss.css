@@ -674,3 +674,122 @@ small,
   font-size: .875rem;
   line-height: 1.5rem;
 }
+
+.m1 {
+  margin: 1rem;
+}
+
+.mt1 {
+  margin-top: 1rem;
+}
+
+.mr1 {
+  margin-right: 1rem;
+}
+
+.mb1 {
+  margin-bottom: 1rem;
+}
+
+.ml1 {
+  margin-left: 1rem;
+}
+
+.btn {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: bold;
+  height: auto;
+  line-height: 2rem;
+  min-height: 2rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  transition-property: box-shadow , background-color;
+  white-space: nowrap;
+  background-color: white;
+  color: #333333;
+}
+.btn:hover {
+  background-color: #e6e6e6;
+}
+.btn:focus {
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px #e6e6e6;
+  outline: none;
+}
+.btn.blue {
+  background-color: #357ebd;
+  color: white;
+}
+.btn.blue:hover {
+  background-color: #2a6395 !important;
+  color: white;
+}
+.btn.blue:focus {
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(53, 126, 189, 0.5);
+  outline: none;
+}
+.btn.red {
+  background-color: #d43f3a;
+  color: white;
+}
+.btn.red:hover {
+  background-color: #b42c27 !important;
+  color: white;
+}
+.btn.red:focus {
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(212, 63, 58, 0.5);
+  outline: none;
+}
+.btn.orange {
+  background-color: #eea236;
+  color: white;
+}
+.btn.orange:hover {
+  background-color: #de8a13 !important;
+  color: white;
+}
+.btn.orange:focus {
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(238, 162, 54, 0.5);
+  outline: none;
+}
+.btn.ghost {
+  background-color: transparent;
+  border: 1px solid #333333;
+}
+.btn.ghost:hover {
+  background-color: #e6e6e6;
+}
+.btn.ghost.blue {
+  border: 1px solid #357ebd;
+  color: #357ebd;
+}
+.btn.ghost.blue:hover {
+  color: white;
+}
+.btn.ghost.red {
+  border: 1px solid #d43f3a;
+  color: #d43f3a;
+}
+.btn.ghost.red:hover {
+  color: white;
+}
+.btn.ghost.orange {
+  border: 1px solid #eea236;
+  color: #eea236;
+}
+.btn.ghost.orange:hover {
+  color: white;
+}
+.btn.lg {
+  padding: 1rem 1.5rem;
+}
+.btn.sm {
+  padding: 0 1rem;
+}
