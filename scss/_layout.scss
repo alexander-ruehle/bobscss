@@ -1,32 +1,36 @@
 // Layout 
 
 .inline {
-	display: inline;
+  display: inline;
 }
-.block { 
-	display: block;
+
+.block {
+  display: block;
 }
+
 .inline-block {
-	display: inline-block;
+  display: inline-block;
 }
 
 .oh {
-	overflow: hidden;
+  overflow: hidden;
 }
+
 .left {
-	float: left;
+  float: left;
 }
+
 .right {
-	float: right;
+  float: right;
 }
 
 .clearfix {
   &:before,
   &:after {
-  	content: " ";
-  	display: table;
+    content: " ";
+    display: table;
   }
   &:after {
-  	clear: both;
+    clear: both;
   }
 }
