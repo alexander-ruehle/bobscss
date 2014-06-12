@@ -16,8 +16,8 @@
 	text-decoration: none;
   	transition-duration: .2s;
   	transition-timing-function: ease;
-  	transition-property: box-shadow , background-color;   	
-  	white-space: nowrap;  	
+  	transition-property: box-shadow , background-color;
+  	white-space: nowrap;
 
   	// default
   	background-color: $white;
@@ -32,40 +32,52 @@
   	// Button Colors
   	&.blue {
   		background-color: $blue;
-  		color: $white;  		
+  		color: $white;
   		&:hover {
   			background-color: darken($blue, 10%) !important;
-    		color: $white;    		
+    		color: $white;
   		}
   	 	&:focus {
   	 		box-shadow: 0 0 0 2px $white, 0 0 1px 4px rgba($blue, .5);
-    		outline: none;    		
+    		outline: none;
   		}
   	}
   	&.red {
   		background-color: $red;
-  		color: $white;  		
+  		color: $white;
   		&:hover {
   			background-color: darken($red, 10%) !important;
-    		color: $white;    		
+    		color: $white;
   		}
   		&:focus {
   			box-shadow: 0 0 0 2px $white, 0 0 1px 4px rgba($red, .5);
-    		outline: none;    		
+    		outline: none;
   		}
   	}
   	&.orange {
   		background-color: $orange;
-  		color: $white;  		
+  		color: $white;
   		&:hover {
   			background-color: darken($orange, 10%) !important;
-    		color: $white;    		
+    		color: $white;
   		}
   	  	&:focus {
   	  		box-shadow: 0 0 0 2px $white, 0 0 1px 4px rgba($orange, .5);
-    		outline: none;    		
+    		outline: none;
   		}
   	}
+    &.green {
+        background-color: $green;
+        color: $white;
+        &:hover{
+            background-color: darken($green, 10%) !important;
+            color: $white
+        }
+        &:focus{
+            box-shadow: 0 0 0 2px $green, 0 0 1px 4px rgba($green, .5);
+            outline: none;
+        }
+    }
   	// Special Ghost Button
   	&.ghost {
   		background-color: transparent;
@@ -77,25 +89,32 @@
 		// Ghost Buttons Colors
   		&.blue {
   			border: 1px solid $blue;
-  			color: $blue;  			
+  			color: $blue;
   			&:hover {
   				color: $white;
   			}
   		}
   		&.red {
   			border: 1px solid $red;
-  			color: $red;  			
+  			color: $red;
   			&:hover {
   				color: $white;
   			}
   		}
   		&.orange {
   			border: 1px solid $orange;
-  			color: $orange;  			
+  			color: $orange;
   			&:hover {
   				color: $white;
   			}
   		}
+        &.green {
+            border: 1px solid $green;
+            color: $green;
+            &:hover {
+                color: $white;
+            }
+        }
   	}
 
   	// Button Sizes
