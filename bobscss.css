@@ -728,7 +728,7 @@ small,
   text-decoration: none;
   transition-duration: .2s;
   transition-timing-function: ease;
-  transition-property: box-shadow , background-color;
+  transition-property: box-shadow, background-color;
   white-space: nowrap;
   background-color: white;
 }
@@ -775,6 +775,18 @@ small,
   box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(238, 162, 54, 0.5);
   outline: none;
 }
+.btn.green {
+  background-color: #5cb85c;
+  color: white;
+}
+.btn.green:hover {
+  background-color: #449d44 !important;
+  color: white;
+}
+.btn.green:focus {
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(92, 184, 92, 0.5);
+  outline: none;
+}
 .btn.ghost {
   background-color: transparent;
   border: 1px solid #333333;
@@ -801,6 +813,13 @@ small,
   color: #eea236;
 }
 .btn.ghost.orange:hover {
+  color: white;
+}
+.btn.ghost.green {
+  border: 1px solid #5cb85c;
+  color: #5cb85c;
+}
+.btn.ghost.green:hover {
   color: white;
 }
 .btn.lg {

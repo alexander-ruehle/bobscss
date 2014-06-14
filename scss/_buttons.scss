@@ -66,6 +66,18 @@
       outline: none;
     }
   }
+  &.green {
+    background-color: $green;
+    color: $white;
+    &:hover {
+      background-color: darken($green, 10%) !important;
+      color: $white;
+    }
+    &:focus {
+      box-shadow: 0 0 0 2px $white, 0 0 1px 4px rgba($green, .5);
+      outline: none;
+    }
+  }
   // Special Ghost Button
   &.ghost {
     background-color: transparent;
@@ -92,6 +104,13 @@
     &.orange {
       border: 1px solid $orange;
       color: $orange;
+      &:hover {
+        color: $white;
+      }
+    }
+    &.green {
+      border: 1px solid $green;
+      color: $green;
       &:hover {
         color: $white;
       }
