@@ -1,0 +1,28 @@
+// Paddings
+
+@for $i from 1 through 4 {
+  .p#{$i} {
+    padding: #{$i}rem;
+  }
+  .pt#{$i} {
+    padding-top: #{$i}rem;
+  }
+  .pr#{$i} {
+    padding-right: #{$i}rem;
+  }
+  .pb#{$i} {
+    padding-bottom: #{$i}rem;
+  }
+  .pl#{$i} {
+    padding-left: #{$i}rem;
+  }
+
+  .px#{$i} {
+    padding-right: #{$i}rem;
+    padding-left: #{$i}rem;
+  }
+  .py#{$i} {
+    padding-top: #{$i}rem;
+    padding-bottom: #{$i}rem;
+  }
+}
