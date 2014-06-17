@@ -6,6 +6,14 @@ body {
   line-height: 1.5rem;
 }
 
+::selection {
+  background: $selection-color;
+}
+
+::-moz-selection {
+  background: $selection-color;
+}
+
 // Typography Sizes
 h1,
 .h1,
