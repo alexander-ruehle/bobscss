@@ -809,7 +809,7 @@ small,
 }
 .btn:focus {
   box-shadow: 0 0 0 2px white, 0 0 1px 4px #e6e6e6;
-  outline: 0;
+  outline: none;
 }
 .btn.blue {
   background-color: #357ebd;
@@ -899,6 +899,9 @@ small,
 }
 .btn.sm {
   padding: 0 1rem;
+}
+.btn.block {
+  width: 100%;
 }
 
 .bg-white {
