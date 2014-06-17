@@ -1,9 +1,12 @@
 // Variables
 
+// Grid
 $container-width: 75rem !default;
+$gutter: 1.5rem !default;
 
 // Font
 $font-family: 'Helvetica Neue', Helvetica, sans-serif !default;
+$selection-color: pink !default;
 
 // Device widths
 $screen-xs: 34rem !default;
@@ -18,4 +21,6 @@ $red: #d43f3a !default;
 $orange: #eea236 !default;
 $green: #5cb85c !default;
 
+$light-gray: #eee;
+$mid-gray: #777;
 $dark-gray: #333 !default;
