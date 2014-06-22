@@ -236,8 +236,6 @@ textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
   min-height: 1.5rem;
   width: 100%;
   -webkit-flex-grow: 0;
@@ -899,6 +897,50 @@ small,
   line-height: 4rem;
 }
 
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.oh {
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+.rounded {
+  border-radius: .3rem;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.border-radius-tl {
+  border-top-left-radius: .3rem;
+}
+
 .m1 {
   margin: 1rem;
 }
@@ -1103,7 +1145,7 @@ small,
   appearance: none;
   -webkit-appearance: none;
   border: none;
-  border-radius: .25rem;
+  border-radius: .3rem;
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
@@ -1217,6 +1259,26 @@ small,
 }
 .btn.block {
   width: 100%;
+}
+
+.white {
+  color: #fff;
+}
+
+.blue {
+  color: #357ebd;
+}
+
+.light-gray {
+  color: #eeeeee;
+}
+
+.mid-gray {
+  color: #777777;
+}
+
+.dark-gray {
+  color: #333333;
 }
 
 .bg-white {

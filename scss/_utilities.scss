@@ -1,0 +1,61 @@
+// Utilities
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.oh {
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.cf {
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Border Radius
+
+.rounded {
+  border-radius: .3rem;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.border-radius-tl {
+  border-top-left-radius: .3rem;
+}
+
+.border-radius-tr {
+  border-top-right-radius: .3rem;
+}
+
+.border-radius-br {
+  border-bottom-right-radius: .3rem;
+}
+
+.border-radius-bl {
+  border-bottom-left-radius: .3rem;
+}

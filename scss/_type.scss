@@ -1,4 +1,5 @@
 // Typography
+
 body {
   color: $text-color;
   font-family: $font-family;
@@ -47,6 +48,7 @@ h6
 }
 
 // Responsive Typography Sizes
+
 @media screen and (min-width: $screen-sm) {
   h1,
   .h1 {
@@ -79,6 +81,7 @@ h6
 }
 
 // Utilities
+
 strong,
 .bold {
   font-weight: bold;
@@ -112,6 +115,7 @@ small,
 }
 
 // Leading Utilities
+
 .leading-1 {
   line-height: 1.5rem;
 }

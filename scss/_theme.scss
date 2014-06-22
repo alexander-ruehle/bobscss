@@ -1,5 +1,25 @@
 // Basic Theme
 
+.white {
+  color: #fff;
+}
+
+.blue {
+  color: $blue;
+}
+
+.light-gray {
+  color: $light-gray;
+}
+
+.mid-gray {
+  color: $mid-gray;
+}
+
+.dark-gray {
+  color: $dark-gray;
+}
+
 .bg-white {
   background-color: $white;
 }
