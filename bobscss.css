@@ -941,6 +941,18 @@ small,
   border-top-left-radius: .3rem;
 }
 
+.border-radius-tr {
+  border-top-right-radius: .3rem;
+}
+
+.border-radius-br {
+  border-bottom-right-radius: .3rem;
+}
+
+.border-radius-bl {
+  border-bottom-left-radius: .3rem;
+}
+
 .m1 {
   margin: 1rem;
 }
@@ -1266,7 +1278,7 @@ small,
 }
 
 .blue {
-  color: #357ebd;
+  color: #3372df;
 }
 
 .light-gray {
