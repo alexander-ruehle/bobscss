@@ -2,19 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <meta http-equiv="cleartype" content="on">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>BobScss</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="../bobscss.css">
 </head>
 <body class="px1">
 <div class="container">
 <h1 class="mb3">BobScss</h1>
-<section>
+
+<section id="grid" class="mb3">
     <h1 class="h2">Grid System</h1>
 
+    <p class="h3 mb1 muted">
+        Basic 12-column flexible grid system.
+    </p>
+
     <div class="flex-container py1 center">
         <div class="flex-item col-xs-1">
             <div class="bg-light-gray py1">.col-xs-1</div>
@@ -86,114 +94,183 @@
             <div class="bg-light-gray py1">.col-sm-3</div>
         </div>
     </div>
-</section>
+    <h2 class="h3 mt3">Justified Columns</h2>
 
-<div class="flex-container justify-content-space-around py1 center">
-    <div class="flex-item col-xs-12 col-sm-6 col-md-5 col-lg-6">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    <div class="flex-container justify-content-space-around py1 center">
+        <div class="flex-item col-xs-12 col-sm-6 col-md-5">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </div>
+        <div class="flex-item col-xs-12 col-sm-6 col-md-5">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </div>
     </div>
-    <div class="flex-item col-xs-12 col-sm-6 col-md-5 col-lg-6">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-    </div>
-</div>
+    <h2 class="h3 mt3">Nested Columns</h2>
 
-<div class="flex-container py1 center">
-    <div class="flex-item col-md-6">
-        <div class="bg-light-gray py1">
-            .col-md-6
-            <div class="flex-container">
-                <div class="flex-item col-sm-6">
-                    <div class="bg-mid-gray py1">
-                        .col-sm-6
+    <div class="flex-container py1 center">
+        <div class="flex-item col-md-6">
+            <div class="bg-light-gray py1">
+                .col-md-6
+                <div class="flex-container">
+                    <div class="flex-item col-sm-6">
+                        <div class="bg-mid-gray py1">
+                            .col-sm-6
+                        </div>
                     </div>
-                </div>
-                <div class="flex-item col-sm-6">
-                    <div class="bg-mid-gray py1">
-                        .col-sm-6
+                    <div class="flex-item col-sm-6">
+                        <div class="bg-mid-gray py1">
+                            .col-sm-6
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="flex-item col-md-6">
-        <div class="bg-light-gray py1">
-            .col-md-6
+        <div class="flex-item col-md-6">
+            <div class="bg-light-gray py1">
+                .col-md-6
+            </div>
         </div>
     </div>
-</div>
+    <h2 class="h3 mt3">Centered Column</h2>
 
-<div class="flex-container justify-content-center py1 center">
-    <div class="flex-item col-xs-6 grow-0">
-        <div class="bg-light-gray py1">
-            .col-xs-6
+    <div class="flex-container justify-content-center py1 center">
+        <div class="flex-item col-xs-6">
+            <div class="bg-light-gray py1">
+                .col-xs-6
+            </div>
         </div>
     </div>
-</div>
+    <h2 class="h3 mt3">Aligned Columns</h2>
 
-<div class="flex-container align-items-center py1 center">
-    <div class="flex-item col-xs-4">
-        <div class="bg-light-gray py4">
-            .col-xs-4
+    <div class="flex-container align-items-center py1 center">
+        <div class="flex-item col-xs-4">
+            <div class="bg-light-gray py4">
+                .col-xs-4
+            </div>
+        </div>
+        <div class="flex-item col-xs-4">
+            <div class="bg-light-gray py1">
+                .col-xs-4
+            </div>
+        </div>
+        <div class="flex-item col-xs-4">
+            <div class="bg-light-gray py2">
+                .col-xs-4
+            </div>
         </div>
     </div>
-    <div class="flex-item col-xs-4">
-        <div class="bg-light-gray py1">
-            .col-xs-4
+    <div class="flex-container py1 center">
+        <div class="flex-item col-xs-4">
+            <div class="bg-light-gray py4">
+                .col-xs-4
+            </div>
+        </div>
+        <div class="flex-item col-xs-4 align-self-top">
+            <div class="bg-light-gray py1">
+                .col-xs-4
+            </div>
+        </div>
+        <div class="flex-item col-xs-4 align-self-end">
+            <div class="bg-light-gray py2">
+                .col-xs-4
+            </div>
         </div>
     </div>
-    <div class="flex-item col-xs-4">
-        <div class="bg-light-gray py2">
-            .col-xs-4
-        </div>
-    </div>
-</div>
+    <h2 class="h3 mt3">Ordered Columns</h2>
 
-<div class="flex-container py1 center">
-    <div class="flex-item col-xs-4">
-        <div class="bg-light-gray py4">
-            .col-xs-4
+    <div class="flex-container row center py1">
+        <div class="flex-item col-xs-4 order-xs-3">
+            <div class="bg-light-gray py4">
+                1
+            </div>
+        </div>
+        <div class="flex-item col-xs-4 order-xs-1">
+            <div class="bg-light-gray py4">
+                2
+            </div>
+        </div>
+        <div class="flex-item col-xs-4 order-xs-2">
+            <div class="bg-light-gray py4">
+                3
+            </div>
         </div>
     </div>
-    <div class="flex-item col-xs-4 align-self-center">
-        <div class="bg-light-gray py1">
-            .col-xs-4
-        </div>
-    </div>
-    <div class="flex-item col-xs-4 align-self-end">
-        <div class="bg-light-gray py2">
-            .col-xs-4
-        </div>
-    </div>
-</div>
+</section>
 
-<div class="flex-container row center py1">
-    <div class="flex-item col-xs-4 order-xs-3">
-        <div class="bg-light-gray py4">
-            1
-        </div>
-    </div>
-    <div class="flex-item col-xs-4 order-xs-1">
-        <div class="bg-light-gray py4">
-            2
-        </div>
-    </div>
-    <div class="flex-item col-xs-4 order-xs-2">
-        <div class="bg-light-gray py4">
-            3
-        </div>
-    </div>
-</div>
+<section id="typography" class="mb3">
+    <h1 class="h2">Typography</h1>
 
-<div class="">
-    <h1>Header 1</h1>
+    <h2 class="center">Header 2</h2>
 
-    <div class="flex-container justify-content-center">
+    <h3 class="center">Header 3</h3>
+    <h4 class="center">Header 4</h4>
+    <h5 class="center">Header 5</h5>
+
+    <p class="h2 center">
+        <span class="caps">Caps</span>
+        <span class="italic">Italic</span>
+        <span class="bold">Bold</span>
+        <span class="regular">Regular</span>
+    </p>
+
+    <div class="flex-container justify-content-center py1">
+        <div class="flex-item col-xs-8">
+            <p class="leading-2 f4">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="buttons" class="mb3">
+    <h1 class="h2">Buttons</h1>
+
+    <p class="h3 mb1 muted">
+        Awesome standalone Buttons with new Ghostbuttons Extension.
+    </p>
+
+    <div class="flex-container row">
+        <div class="flex-item col-xs-12">
+            <button class="btn mb1">.btn</button>
+            <br/>
+            <input type="submit" class="btn blue mr1 mb1" value="Submit Button">
+            <br/>
+            <button class="btn blue mb1 mr1">.btn .blue</button>
+            <button class="btn red mb1 mr1">.btn .red</button>
+            <button class="btn orange mr1 mb1">.btn .orange</button>
+            <button class="btn green mb1">.btn .green</button>
+            <br/>
+            <button class="btn orange lg mb1 mr1">.btn .orange .lg</button>
+            <button class="btn orange sm mb1">.btn .orange .lg</button>
+            <br/>
+            <button class="btn ghost mb1 mr1">.btn .ghost</button>
+            <button class="btn ghost blue mb1 mr1">.btn .ghost .blue</button>
+            <button class="btn ghost red mb1 mr1">.btn .ghost .red</button>
+            <button class="btn ghost orange mb1 mr1">.btn .ghost .orange</button>
+            <button class="btn ghost green mb1 block">.btn .ghost .green .block</button>
+        </div>
+    </div>
+</section>
+
+<section id="components" class="mb3">
+    <h1 class="h2">Components</h1>
+
+    <p class="h3 mb1 muted">
+        Create many different Components without writing any new CSS.<br/>
+        Take this example of the Media Object done with Flexbox and normal floating div`s.
+    </p>
+
+    <div class="flex-container justify-content-center mb3">
         <div class="flex-item col-sm-10 col-md-6">
-            <div class="flex-container">
+            <div class="flex-container mb1">
                 <div class="flex-item col-xs-4 col-sm-3">
                     <div class="h2 bold center bg-blue py2 white rounded">
                         test
@@ -213,9 +290,9 @@
             </div>
         </div>
     </div>
-    <div class="flex-container justify-content-center">
+    <div class="flex-container justify-content-center mb3">
         <div class="flex-item col-sm-10 col-md-6">
-            <div class="oh mt4 mb1">
+            <div class="oh mb1">
                 <div class="h2 left p2 mr2 bold white bg-blue rounded">
                     test
                 </div>
@@ -230,46 +307,18 @@
             </div>
         </div>
     </div>
+    <div class="flex-container row justify-content-center">
+        <div class="flex-item col-xs-12 col-sm-10">
+            <div class="bg-remember rounded mb1 p1 white">
+                <h2 class="h2">Box</h2>
 
-    <h2>Header 2</h2>
-
-    <h3>Header 3</h3>
-    <h4>Header 4</h4>
-    <h5>Header 5</h5>
-
-    <p>
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
-        tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-        semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
-        ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
-        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec
-        non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-        egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan
-        porttitor, facilisis luctus, metus
-    </p>
-    <button class="btn mb1">.btn</button>
-    <br/>
-    <input type="submit" class="btn blue mr1 mb1" value="Submit Button">
-    <br/>
-    <button class="btn blue mb1 mr1">.btn .blue</button>
-    <button class="btn red mb1 mr1">.btn .red</button>
-    <button class="btn orange mr1 mb1">.btn .orange</button>
-    <button class="btn green mb1">.btn .green</button>
-    <br/>
-    <button class="btn orange lg mb1 mr1">.btn .orange .lg</button>
-    <button class="btn orange sm mb1">.btn .orange .lg</button>
-    <br/>
-    <button class="btn ghost mb1 mr1">.btn .ghost</button>
-    <button class="btn ghost blue mb1 mr1">.btn .ghost .blue</button>
-    <button class="btn ghost red mb1 mr1">.btn .ghost .red</button>
-    <button class="btn ghost orange mb1 mr1">.btn .ghost .orange</button>
-    <button class="btn ghost green mb1 block">.btn .ghost .green .block</button>
-</div>
-<div class="">
-    <form action="#" method="post" class="mb2">
-        <input type="text"/>
-    </form>
-</div>
+                <strong>
+                    Cool looking Box with some Buzz texts.
+                </strong>
+            </div>
+        </div>
+    </div>
+</section>
 </div>
 </body>
 </html>

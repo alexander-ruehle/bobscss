@@ -1,5 +1,11 @@
 // Basic Theme
 
+// Standard Colors
+
+.muted {
+  color: $muted-color;
+}
+
 .white {
   color: #fff;
 }
@@ -38,4 +44,10 @@
 
 .bg-dark-gray {
   background-color: $dark-gray;
+}
+
+// Fancy Colors
+
+.bg-remember {
+  background-color: $remember-color;
 }

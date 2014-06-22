@@ -1273,6 +1273,10 @@ small,
   width: 100%;
 }
 
+.muted {
+  color: #737373;
+}
+
 .white {
   color: #fff;
 }
@@ -1311,4 +1315,8 @@ small,
 
 .bg-dark-gray {
   background-color: #333333;
+}
+
+.bg-remember {
+  background-color: #09829a;
 }
