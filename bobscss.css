@@ -459,7 +459,7 @@ textarea {
 }
 
 body {
-  color: #333333;
+  color: #404040;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.5rem;
@@ -812,27 +812,27 @@ small,
   outline: none;
 }
 .btn.blue {
-  background-color: #357ebd;
+  background-color: #3372df;
   color: white;
 }
 .btn.blue:hover {
-  background-color: #2a6395 !important;
+  background-color: #1e5ac1 !important;
   color: white;
 }
 .btn.blue:focus {
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(53, 126, 189, 0.5);
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(51, 114, 223, 0.5);
   outline: none;
 }
 .btn.red {
-  background-color: #d43f3a;
+  background-color: #cb4437;
   color: white;
 }
 .btn.red:hover {
-  background-color: #b42c27 !important;
+  background-color: #a4352b !important;
   color: white;
 }
 .btn.red:focus {
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(212, 63, 58, 0.5);
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(203, 68, 55, 0.5);
   outline: none;
 }
 .btn.orange {
@@ -848,15 +848,15 @@ small,
   outline: none;
 }
 .btn.green {
-  background-color: #5cb85c;
+  background-color: #0f9d58;
   color: white;
 }
 .btn.green:hover {
-  background-color: #449d44 !important;
+  background-color: #0b6e3e !important;
   color: white;
 }
 .btn.green:focus {
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(92, 184, 92, 0.5);
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(15, 157, 88, 0.5);
   outline: none;
 }
 .btn.ghost {
@@ -867,15 +867,15 @@ small,
   background-color: #e6e6e6;
 }
 .btn.ghost.blue {
-  border: 1px solid #357ebd;
-  color: #357ebd;
+  border: 1px solid #3372df;
+  color: #3372df;
 }
 .btn.ghost.blue:hover {
   color: white;
 }
 .btn.ghost.red {
-  border: 1px solid #d43f3a;
-  color: #d43f3a;
+  border: 1px solid #cb4437;
+  color: #cb4437;
 }
 .btn.ghost.red:hover {
   color: white;
@@ -888,8 +888,8 @@ small,
   color: white;
 }
 .btn.ghost.green {
-  border: 1px solid #5cb85c;
-  color: #5cb85c;
+  border: 1px solid #0f9d58;
+  color: #0f9d58;
 }
 .btn.ghost.green:hover {
   color: white;
@@ -909,7 +909,7 @@ small,
 }
 
 .bg-blue {
-  background-color: #357ebd;
+  background-color: #3372df;
 }
 
 .bg-light-gray {
