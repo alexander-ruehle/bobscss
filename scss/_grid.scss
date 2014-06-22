@@ -275,6 +275,13 @@
     &.col-xs-#{$i} {
       width: percentage($i/12);
     }
+    &.order-xs-#{$i} {
+      -webkit-box-ordinal-group: #{$i};
+      -moz-box-ordinal-group: #{$i};
+      -webkit-order: #{$i};
+      -ms-flex-order: #{$i};
+      order: #{$i};
+    }
   }
 
   // Responsive grow sizes
@@ -282,6 +289,13 @@
     @for $i from 1 through 11 {
       &.col-sm-#{$i} {
         width: percentage($i/12);
+      }
+      &.order-sm-#{$i} {
+        -webkit-box-ordinal-group: #{$i};
+        -moz-box-ordinal-group: #{$i};
+        -webkit-order: #{$i};
+        -ms-flex-order: #{$i};
+        order: #{$i};
       }
     }
   }
@@ -291,6 +305,13 @@
       &.col-md-#{$i} {
         width: percentage($i/12);
       }
+      &.order-md-#{$i} {
+        -webkit-box-ordinal-group: #{$i};
+        -moz-box-ordinal-group: #{$i};
+        -webkit-order: #{$i};
+        -ms-flex-order: #{$i};
+        order: #{$i};
+      }
     }
   }
   // Responsive grow sizes
@@ -298,6 +319,13 @@
     @for $i from 1 through 11 {
       &.col-lg-#{$i} {
         width: percentage($i/12);
+      }
+      &.order-lg-#{$i} {
+        -webkit-box-ordinal-group: #{$i};
+        -moz-box-ordinal-group: #{$i};
+        -webkit-order: #{$i};
+        -ms-flex-order: #{$i};
+        order: #{$i};
       }
     }
   }
