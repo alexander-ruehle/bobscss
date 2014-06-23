@@ -929,6 +929,17 @@ small,
   clear: both;
 }
 
+img.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .rounded {
   border-radius: .3rem;
 }
@@ -953,6 +964,26 @@ small,
   border-bottom-left-radius: .3rem;
 }
 
+@media screen and (max-width: 34rem) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 54rem) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 70rem) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 85rem) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
 .m1 {
   margin: 1rem;
 }
@@ -1158,6 +1189,7 @@ small,
   -webkit-appearance: none;
   border: none;
   border-radius: .3rem;
+  color: inherit;
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
@@ -1233,6 +1265,7 @@ small,
   border: 1px solid #333333;
 }
 .btn.ghost:hover {
+  color: inherit;
   background-color: #e6e6e6;
 }
 .btn.ghost.blue {
@@ -1315,6 +1348,14 @@ small,
 
 .bg-dark-gray {
   background-color: #333333;
+}
+
+a {
+  color: #3372df;
+  text-decoration: none;
+}
+a:hover {
+  color: #1e5ac1;
 }
 
 .bg-remember {

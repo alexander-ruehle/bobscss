@@ -34,6 +34,21 @@
   }
 }
 
+// Basic Image utils needed for responsive behavior
+
+img {
+  &.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  &.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 // Border Radius
 
 .rounded {
@@ -58,4 +73,30 @@
 
 .border-radius-bl {
   border-bottom-left-radius: .3rem;
+}
+
+// Hiding max device widths
+
+@media screen and (max-width: $screen-xs) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: $screen-md) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: $screen-lg) {
+  .hidden-lg {
+    display: none !important;
+  }
 }

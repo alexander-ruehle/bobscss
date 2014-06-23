@@ -5,6 +5,7 @@
   -webkit-appearance: none;
   border: none;
   border-radius: .3rem;
+  color: inherit;
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
@@ -83,6 +84,7 @@
     background-color: transparent;
     border: 1px solid $dark-gray;
     &:hover {
+      color: inherit;
       background-color: darken($white, 10%);
     }
 
