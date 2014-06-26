@@ -1146,6 +1146,41 @@ img.center {
     display: none !important;
   }
 }
+.raise-1 {
+  -moz-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.12);
+  z-index: 100;
+}
+
+.raise-2 {
+  -moz-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.16);
+  z-index: 200;
+}
+
+.raise-3 {
+  -moz-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  z-index: 300;
+}
+
+.raise-4 {
+  -moz-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.25);
+  z-index: 400;
+}
+
+.raise-5 {
+  -moz-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.3);
+  z-index: 500;
+}
+
 .m1 {
   margin: 1rem;
 }
@@ -1350,7 +1385,7 @@ img.center {
   appearance: none;
   -webkit-appearance: none;
   border: none;
-  border-radius: .3rem;
+  border-radius: .2rem;
   color: inherit;
   cursor: pointer;
   display: inline-block;
@@ -1365,7 +1400,7 @@ img.center {
   transition-timing-function: ease;
   transition-property: box-shadow, background-color;
   white-space: nowrap;
-  background-color: white;
+  background-color: transparent;
 }
 .btn:hover {
   background-color: #e6e6e6;
@@ -1459,7 +1494,7 @@ img.center {
   color: white;
 }
 .btn.lg {
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.8rem;
 }
 .btn.sm {
   padding: 0 1rem;

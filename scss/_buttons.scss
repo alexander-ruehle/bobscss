@@ -4,7 +4,7 @@
   appearance: none;
   -webkit-appearance: none;
   border: none;
-  border-radius: .3rem;
+  border-radius: .2rem;
   color: inherit;
   cursor: pointer;
   display: inline-block;
@@ -21,7 +21,8 @@
   white-space: nowrap;
 
   // default
-  background-color: $white;
+  background-color: transparent;
+
   &:hover {
     background-color: darken($white, 10%);
   }
@@ -121,7 +122,7 @@
 
   // Button Sizes
   &.lg {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.8rem;
   }
   &.sm {
     padding: 0 1rem;
