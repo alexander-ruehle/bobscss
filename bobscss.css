@@ -1059,38 +1059,6 @@ small,
   line-height: 4rem;
 }
 
-.inline {
-  display: inline;
-}
-
-.block {
-  display: block;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.oh {
-  overflow: hidden;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.cf:before, .cf:after {
-  content: " ";
-  display: table;
-}
-.cf:after {
-  clear: both;
-}
-
 img.img-responsive {
   display: block;
   max-width: 100%;
