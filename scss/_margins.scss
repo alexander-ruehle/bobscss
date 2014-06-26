@@ -16,4 +16,13 @@
   .ml#{$i} {
     margin-left: #{$i}rem;
   }
+
+  .mx#{$i} {
+    margin-right: #{$i}rem;
+    margin-left: #{$i}rem;
+  }
+  .my#{$i} {
+    margin-top: #{$i}rem;
+    margin-bottom: #{$i}rem;
+  }
 }

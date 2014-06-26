@@ -1059,6 +1059,38 @@ small,
   line-height: 4rem;
 }
 
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.oh {
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
 img.img-responsive {
   display: block;
   max-width: 100%;
@@ -1169,6 +1201,16 @@ img.center {
   margin-left: 1rem;
 }
 
+.mx1 {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.my1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .m2 {
   margin: 2rem;
 }
@@ -1187,6 +1229,16 @@ img.center {
 
 .ml2 {
   margin-left: 2rem;
+}
+
+.mx2 {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.my2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .m3 {
@@ -1209,6 +1261,16 @@ img.center {
   margin-left: 3rem;
 }
 
+.mx3 {
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.my3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .m4 {
   margin: 4rem;
 }
@@ -1227,6 +1289,16 @@ img.center {
 
 .ml4 {
   margin-left: 4rem;
+}
+
+.mx4 {
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+.my4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .p1 {
