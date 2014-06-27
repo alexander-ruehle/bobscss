@@ -1,5 +1,23 @@
 // Grid
 
+// Grid Mixins
+
+@mixin flex-order($i) {
+  -webkit-box-ordinal-group: $i;
+  -moz-box-ordinal-group: $i;
+  -webkit-order: $i;
+  -ms-flex-order: $i;
+  order: $i;
+}
+
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+// ####################
+
 .container {
   max-width: $container-width;
   margin-right: auto;
@@ -86,19 +104,13 @@
 
   // flex-wrap
   &.wrap {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    @include flex-wrap(wrap);
   }
   &.nowrap {
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+    @include flex-wrap(nowrap);
   }
   &.wrap-reverse {
-    -webkit-flex-wrap: wrap-reverse;
-    -ms-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
+    @include flex-wrap(wrap-reverse);
   }
 
   // justify-content
@@ -209,9 +221,7 @@
 }
 
 .flex-item {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  @include border-box();
 
   // For usage without column widths
   min-height: 1.5rem;
@@ -272,11 +282,7 @@
       width: percentage($i/12);
     }
     &.order-xs-#{$i} {
-      -webkit-box-ordinal-group: #{$i};
-      -moz-box-ordinal-group: #{$i};
-      -webkit-order: #{$i};
-      -ms-flex-order: #{$i};
-      order: #{$i};
+      @include flex-order($i);
     }
   }
 
@@ -292,11 +298,7 @@
         width: percentage($i/12);
       }
       &.order-sm-#{$i} {
-        -webkit-box-ordinal-group: #{$i};
-        -moz-box-ordinal-group: #{$i};
-        -webkit-order: #{$i};
-        -ms-flex-order: #{$i};
-        order: #{$i};
+        @include flex-order($i);
       }
     }
     @for $i from 1 through 11 {
@@ -312,11 +314,7 @@
         width: percentage($i/12);
       }
       &.order-md-#{$i} {
-        -webkit-box-ordinal-group: #{$i};
-        -moz-box-ordinal-group: #{$i};
-        -webkit-order: #{$i};
-        -ms-flex-order: #{$i};
-        order: #{$i};
+        @include flex-order($i);
       }
     }
     @for $i from 1 through 11 {
@@ -332,11 +330,7 @@
         width: percentage($i/12);
       }
       &.order-lg-#{$i} {
-        -webkit-box-ordinal-group: #{$i};
-        -moz-box-ordinal-group: #{$i};
-        -webkit-order: #{$i};
-        -ms-flex-order: #{$i};
-        order: #{$i};
+        @include flex-order($i);
       }
     }
     @for $i from 1 through 11 {
