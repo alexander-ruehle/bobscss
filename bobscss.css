@@ -1126,6 +1126,10 @@ img.center {
   border-bottom-left-radius: .3rem;
 }
 
+.hidden {
+  display: none !important;
+}
+
 @media screen and (max-width: 34rem) {
   .hidden-xs {
     display: none !important;
@@ -1444,6 +1448,7 @@ img.center {
 }
 .btn:hover {
   background-color: #e6e6e6;
+  color: #404040;
 }
 .btn:focus {
   box-shadow: 0 0 0 2px white, 0 0 1px 4px #e6e6e6;

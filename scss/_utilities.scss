@@ -43,6 +43,10 @@ img {
 
 // Hiding max device widths
 
+.hidden {
+  display: none !important;
+}
+
 @media screen and (max-width: $screen-xs) {
   .hidden-xs {
     display: none !important;

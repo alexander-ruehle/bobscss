@@ -25,6 +25,7 @@
 
   &:hover {
     background-color: darken($white, 10%);
+    color: $text-color;
   }
   &:focus {
     box-shadow: 0 0 0 2px $white, 0 0 1px 4px darken($white, 10%);
