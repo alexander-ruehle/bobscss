@@ -1584,6 +1584,59 @@ img.center {
   width: 100%;
 }
 
+.form {
+  font-size: 1rem;
+}
+.form .input,
+.form .select,
+.form .textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form .input.error:not(:focus):invalid,
+.form .select.error:not(:focus):invalid,
+.form .textarea.error:not(:focus):invalid {
+  background-color: #db7d74;
+}
+.form .input.error:not(:focus):valid,
+.form .select.error:not(:focus):valid,
+.form .textarea.error:not(:focus):valid {
+  background-color: #16e37f;
+}
+.form .input:focus,
+.form .select:focus,
+.form .textarea:focus {
+  outline: none;
+  border-color: #3372df;
+}
+.form .input {
+  appearance: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: .25rem;
+  height: 3rem;
+  line-height: 2rem;
+  padding: .5rem;
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+.form .select {
+  border-radius: .25rem;
+  display: block;
+  height: 3rem;
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+}
+.form .textarea {
+  border-radius: .25rem;
+  display: block;
+  line-height: 1.5rem;
+  width: 100%;
+}
+
 .muted {
   color: #737373;
 }
