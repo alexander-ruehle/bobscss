@@ -15,9 +15,7 @@
   min-height: 2rem;
   padding: .5rem 1rem;
   text-decoration: none;
-  transition-duration: .2s;
-  transition-timing-function: ease;
-  transition-property: box-shadow, background-color;
+  @include transition((box-shadow .2s ease, background-color .2s ease));
   white-space: nowrap;
 
   // default

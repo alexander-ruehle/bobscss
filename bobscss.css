@@ -1150,39 +1150,74 @@ img.center {
     display: none !important;
   }
 }
-.raise-1 {
+.raise-1, .raise-hover-1:hover {
   -moz-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.12);
   z-index: 100;
 }
 
-.raise-2 {
+.raise-2, .raise-hover-2:hover {
   -moz-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.16);
   -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.16);
   z-index: 200;
 }
 
-.raise-3 {
+.raise-3, .raise-hover-3:hover {
   -moz-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   z-index: 300;
 }
 
-.raise-4 {
+.raise-4, .raise-hover-4:hover {
   -moz-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.25);
   z-index: 400;
 }
 
-.raise-5 {
+.raise-5, .raise-hover-5:hover {
   -moz-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.3);
   z-index: 500;
+}
+
+.raise-hover-1 {
+  -webkit-transition: box-shadow 0.2s ease;
+  -moz-transition: box-shadow 0.2s ease;
+  -o-transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+}
+
+.raise-hover-2 {
+  -webkit-transition: box-shadow 0.2s ease;
+  -moz-transition: box-shadow 0.2s ease;
+  -o-transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+}
+
+.raise-hover-3 {
+  -webkit-transition: box-shadow 0.2s ease;
+  -moz-transition: box-shadow 0.2s ease;
+  -o-transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+}
+
+.raise-hover-4 {
+  -webkit-transition: box-shadow 0.2s ease;
+  -moz-transition: box-shadow 0.2s ease;
+  -o-transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+}
+
+.raise-hover-5 {
+  -webkit-transition: box-shadow 0.2s ease;
+  -moz-transition: box-shadow 0.2s ease;
+  -o-transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
 }
 
 .m1 {
@@ -1440,9 +1475,10 @@ img.center {
   min-height: 2rem;
   padding: .5rem 1rem;
   text-decoration: none;
-  transition-duration: .2s;
-  transition-timing-function: ease;
-  transition-property: box-shadow, background-color;
+  -webkit-transition: box-shadow 0.2s ease, background-color 0.2s ease;
+  -moz-transition: box-shadow 0.2s ease, background-color 0.2s ease;
+  -o-transition: box-shadow 0.2s ease, background-color 0.2s ease;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
   white-space: nowrap;
   background-color: transparent;
 }

@@ -107,3 +107,38 @@ img {
   box-shadow: 0 17px 50px 0 rgba(0, 0, 0, .30);
   z-index: 500;
 }
+
+.raise-hover-1 {
+  @include transition(box-shadow .2s ease);
+  &:hover {
+    @extend .raise-1;
+  }
+}
+
+.raise-hover-2 {
+  @include transition(box-shadow .2s ease);
+  &:hover {
+    @extend .raise-2;
+  }
+}
+
+.raise-hover-3 {
+  @include transition(box-shadow .2s ease);
+  &:hover {
+    @extend .raise-3;
+  }
+}
+
+.raise-hover-4 {
+  @include transition(box-shadow .2s ease);
+  &:hover {
+    @extend .raise-4;
+  }
+}
+
+.raise-hover-5 {
+  @include transition(box-shadow .2s ease);
+  &:hover {
+    @extend .raise-5;
+  }
+}
