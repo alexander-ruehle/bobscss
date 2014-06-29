@@ -1,0 +1,34 @@
+// Variables
+
+// Grid
+$container-width: 75rem !default;
+
+// Font
+$font-family: 'Helvetica Neue', Helvetica, sans-serif !default;
+$selection-color: pink !default;
+$text-color: #404040 !default;
+$highlight-color: #3372df !default;
+$success-color: #0f9d58 !default;
+$warning-color: #ffd45b !default;
+$danger-color: #cb4437 !default;
+$muted-color: #737373 !default;
+$remember-color: #09829a !default;
+$learning-color: #da2e75 !default;
+
+// Device widths
+$screen-xs: 34rem !default;
+$screen-sm: 54rem !default;
+$screen-md: 70rem !default;
+$screen-lg: 85rem !default;
+
+// Colors
+$white: #fff !default;
+$blue: #3372df !default;
+$red: #cb4437 !default;
+$orange: #eea236 !default;
+$yellow: #f4b400 !default;
+$green: #0f9d58 !default;
+
+$light-gray: #eee;
+$mid-gray: #777;
+$dark-gray: #333 !default;

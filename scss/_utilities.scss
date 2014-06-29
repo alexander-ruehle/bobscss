@@ -1,0 +1,144 @@
+// Utilities
+
+// Basic Image utils needed for responsive behavior
+
+img {
+  &.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  &.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// Border Radius
+
+.rounded {
+  border-radius: .3rem;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.border-radius-tl {
+  border-top-left-radius: .3rem;
+}
+
+.border-radius-tr {
+  border-top-right-radius: .3rem;
+}
+
+.border-radius-br {
+  border-bottom-right-radius: .3rem;
+}
+
+.border-radius-bl {
+  border-bottom-left-radius: .3rem;
+}
+
+// Hiding max device widths
+
+.hidden {
+  display: none !important;
+}
+
+@media screen and (max-width: $screen-xs) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: $screen-md) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: $screen-lg) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+
+// Raising levels
+
+.raise-1 {
+  -moz-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+  z-index: 100;
+}
+
+.raise-2 {
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.188235);
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.188235);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.188235);
+  z-index: 200;
+}
+
+.raise-3 {
+  -moz-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  z-index: 300;
+}
+
+.raise-4 {
+  -moz-box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
+  box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
+  z-index: 400;
+}
+
+.raise-5 {
+  -moz-box-shadow: 0 40px 77px 0 rgba(0, 0, 0, 0.22), 0 27px 24px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 40px 77px 0 rgba(0, 0, 0, 0.22), 0 27px 24px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 40px 77px 0 rgba(0, 0, 0, 0.22), 0 27px 24px 0 rgba(0, 0, 0, 0.2);
+  z-index: 500;
+}
+
+.raise-hover-1 {
+  @include transition(box-shadow .2s ease);
+  &:hover {
+    @extend .raise-1;
+  }
+}
+
+.raise-hover-2 {
+  @include transition(box-shadow .2s ease);
+  &:hover {
+    @extend .raise-2;
+  }
+}
+
+.raise-hover-3 {
+  @include transition(box-shadow .2s ease);
+  &:hover {
+    @extend .raise-3;
+  }
+}
+
+.raise-hover-4 {
+  @include transition(box-shadow .2s ease);
+  &:hover {
+    @extend .raise-4;
+  }
+}
+
+.raise-hover-5 {
+  @include transition(box-shadow .2s ease);
+  &:hover {
+    @extend .raise-5;
+  }
+}

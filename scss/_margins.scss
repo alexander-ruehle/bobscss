@@ -1,0 +1,28 @@
+// Margins
+
+@for $i from 1 through 4 {
+  .m#{$i} {
+    margin: #{$i}rem;
+  }
+  .mt#{$i} {
+    margin-top: #{$i}rem;
+  }
+  .mr#{$i} {
+    margin-right: #{$i}rem;
+  }
+  .mb#{$i} {
+    margin-bottom: #{$i}rem;
+  }
+  .ml#{$i} {
+    margin-left: #{$i}rem;
+  }
+
+  .mx#{$i} {
+    margin-right: #{$i}rem;
+    margin-left: #{$i}rem;
+  }
+  .my#{$i} {
+    margin-top: #{$i}rem;
+    margin-bottom: #{$i}rem;
+  }
+}

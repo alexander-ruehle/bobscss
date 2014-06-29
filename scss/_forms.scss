@@ -1,0 +1,57 @@
+// Forms
+
+.form {
+  font-size: 1rem;
+
+  .form-group {
+    .input {
+      appearance: none;
+      border: 1px solid $mid-gray;
+      border-radius: .25rem;
+      height: 3rem;
+      line-height: 2rem;
+      padding: .5rem;
+      max-width: 100%;
+
+      display: block;
+      width: 100%;
+    }
+
+    .select {
+      border-radius: .25rem;
+      display: block;
+      height: 3rem;
+      margin-right: 0;
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .textarea {
+      border-radius: .25rem;
+      display: block;
+      line-height: 1.5rem;
+      padding: .5rem;
+      width: 100%;
+    }
+
+    .input,
+    .select,
+    .textarea {
+      @include border-box();
+      &.error {
+        &:not(:focus) {
+          &:invalid {
+            background-color: lighten($danger-color, 15%);
+          }
+          &:valid {
+            background-color: lighten($success-color, 15%);
+          }
+        }
+      }
+      &:focus {
+        outline: none;
+        border-color: $dark-gray;
+      }
+    }
+  }
+}

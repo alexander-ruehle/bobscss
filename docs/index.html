@@ -1,15 +1,469 @@
 <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>BobScss</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BobScss</title>
 
-        <link rel="stylesheet" href="../bobscss.css">
-	</head>
-	<body>
-		<h1>BobScss</h1>			
-	</body>
+    <link rel="stylesheet" href="../bobscss.css">
+</head>
+<body>
+
+<section id="welcome"></section>
+<div class="container px1">
+    <div class="flex-container row py2">
+        <div class="flex-item col-xs-12">
+            <h1 class="mb3 caps">
+                bob<span class="italic">scss</span>
+            </h1>
+        </div>
+    </div>
+</div>
+
+<section id="grid">
+<div class="container px1">
+<div class="flex-container row justify-content-center py2">
+    <div class="flex-item col-sm-10">
+        <h2>Grid System</h2>
+
+        <p class="muted">
+            Basic 12-column flexible grid system.
+        </p>
+    </div>
+</div>
+<div class="flex-container row pb1 center h2">
+    <div class="flex-item col-sm-6">
+        <div class="bg-light-gray py1">.col-sm-6</div>
+    </div>
+    <div class="flex-item col-sm-6">
+        <div class="bg-light-gray py1">.col-sm-6</div>
+    </div>
+</div>
+<div class="flex-container row pb1 center">
+    <div class="flex-item col-sm-4">
+        <div class="bg-light-gray py1">.col-sm-4</div>
+    </div>
+    <div class="flex-item col-sm-4">
+        <div class="bg-light-gray py1">.col-sm-4</div>
+    </div>
+    <div class="flex-item col-sm-4">
+        <div class="bg-light-gray py1">.col-sm-4</div>
+    </div>
+</div>
+<div class="flex-container row pb1 center">
+    <div class="flex-item col-sm-3">
+        <div class="bg-light-gray py1">.col-sm-3</div>
+    </div>
+    <div class="flex-item col-sm-3">
+        <div class="bg-light-gray py1">.col-sm-3</div>
+    </div>
+    <div class="flex-item col-sm-3">
+        <div class="bg-light-gray py1">.col-sm-3</div>
+    </div>
+    <div class="flex-item col-sm-3">
+        <div class="bg-light-gray py1">.col-sm-3</div>
+    </div>
+</div>
+<div class="flex-container row pb1 center">
+    <div class="flex-item col-xs-2">
+        <div class="bg-light-gray py1">.col-xs-2</div>
+    </div>
+    <div class="flex-item col-xs-2">
+        <div class="bg-light-gray py1">.col-xs-2</div>
+    </div>
+    <div class="flex-item col-xs-2">
+        <div class="bg-light-gray py1">.col-xs-2</div>
+    </div>
+    <div class="flex-item col-xs-2">
+        <div class="bg-light-gray py1">.col-xs-2</div>
+    </div>
+    <div class="flex-item col-xs-2">
+        <div class="bg-light-gray py1">.col-xs-2</div>
+    </div>
+    <div class="flex-item col-xs-2">
+        <div class="bg-light-gray py1">.col-xs-2</div>
+    </div>
+</div>
+<div class="flex-container row pb1 center">
+    <div class="flex-item col-xs-1">
+        <div class="bg-light-gray py1">.col-xs-1</div>
+    </div>
+    <div class="flex-item col-xs-1">
+        <div class="bg-light-gray py1">.col-xs-1</div>
+    </div>
+    <div class="flex-item col-xs-1">
+        <div class="bg-light-gray py1">.col-xs-1</div>
+    </div>
+    <div class="flex-item col-xs-1">
+        <div class="bg-light-gray py1">.col-xs-1</div>
+    </div>
+    <div class="flex-item col-xs-1">
+        <div class="bg-light-gray py1">.col-xs-1</div>
+    </div>
+    <div class="flex-item col-xs-1">
+        <div class="bg-light-gray py1">.col-xs-1</div>
+    </div>
+    <div class="flex-item col-xs-1">
+        <div class="bg-light-gray py1">.col-xs-1</div>
+    </div>
+    <div class="flex-item col-xs-1">
+        <div class="bg-light-gray py1">.col-xs-1</div>
+    </div>
+    <div class="flex-item col-xs-1">
+        <div class="bg-light-gray py1">.col-xs-1</div>
+    </div>
+    <div class="flex-item col-xs-1">
+        <div class="bg-light-gray py1">.col-xs-1</div>
+    </div>
+    <div class="flex-item col-xs-1">
+        <div class="bg-light-gray py1">.col-xs-1</div>
+    </div>
+    <div class="flex-item col-xs-1">
+        <div class="bg-light-gray py1">.col-xs-1</div>
+    </div>
+</div>
+<div class="flex-container row justify-content-center py2">
+    <div class="flex-item col-sm-10">
+        <h3>Nesting Columns</h3>
+
+        <p class="muted">
+            Easily nest row and columns.
+        </p>
+    </div>
+</div>
+<div class="flex-container row pb1 center">
+    <div class="flex-item col-md-6">
+        <div class="bg-light-gray">
+            <div class="py1">
+                .col-md-6
+            </div>
+            <div class="flex-container pb1 px1">
+                <div class="flex-item col-sm-6">
+                    <div class="box bg-mid-gray py1">
+                        .col-sm-6
+                    </div>
+                </div>
+                <div class="flex-item col-sm-6">
+                    <div class="box bg-mid-gray py1">
+                        .col-sm-6
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-item col-md-6">
+        <div class="bg-light-gray py1">
+            .col-md-6
+        </div>
+    </div>
+</div>
+<div class="flex-container row justify-content-center py2">
+    <div class="flex-item col-sm-10">
+        <h3>Justify Columns</h3>
+
+        <p class="muted">
+            Use the new Flexbox features to justify content with columns.
+        </p>
+    </div>
+</div>
+<div class="flex-container row justify-content-space-around pb1">
+    <div class="flex-item col-xs-12 col-sm-6 col-md-5">
+        <div class="bg-light-gray p1">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+    <div class="flex-item col-xs-12 col-sm-6 col-md-5">
+        <div class="bg-light-gray p1">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+</div>
+<div class="flex-container row justify-content-center py2">
+    <div class="flex-item col-sm-10">
+        <h3>Offsetting Columns</h3>
+
+        <p class="muted">
+            Move columns to the right.
+        </p>
+    </div>
+</div>
+<div class="flex-container row pb1 center">
+    <div class="flex-item col-sm-offset-3 col-sm-4">
+        <div class="bg-light-gray py1">.col-sm-offset-3 .col-sm-4</div>
+    </div>
+</div>
+<div class="flex-container row justify-content-center py2">
+    <div class="flex-item col-sm-10">
+        <h3>Centering Columns</h3>
+
+        <p class="muted">
+            Flexbox feature again. Center all kinds of column widths with just one css class.
+        </p>
+    </div>
+</div>
+<div class="flex-container row justify-content-center pb1 center">
+    <div class="flex-item col-xs-6">
+        <div class="bg-light-gray p1">.col-xs-6</div>
+    </div>
+</div>
+<div class="flex-container row justify-content-center py2">
+    <div class="flex-item col-sm-10">
+        <h3>Aligning Columns</h3>
+
+        <p class="muted">
+            Flexbox, yay! Align the content or align the flex-item`s separately.
+        </p>
+    </div>
+</div>
+<div class="flex-container row align-items-center pb1 center">
+    <div class="flex-item col-xs-4">
+        <div class="bg-light-gray py4">
+            .col-xs-4
+        </div>
+    </div>
+    <div class="flex-item col-xs-4">
+        <div class="bg-light-gray py1">
+            .col-xs-4
+        </div>
+    </div>
+    <div class="flex-item col-xs-4">
+        <div class="bg-light-gray py2">
+            .col-xs-4
+        </div>
+    </div>
+</div>
+<div class="flex-container row pb1 center">
+    <div class="flex-item col-xs-4">
+        <div class="bg-light-gray py4">
+            .col-xs-4
+        </div>
+    </div>
+    <div class="flex-item col-xs-4 align-self-top">
+        <div class="bg-light-gray py1">
+            .col-xs-4
+        </div>
+    </div>
+    <div class="flex-item col-xs-4 align-self-end">
+        <div class="bg-light-gray py2">
+            .col-xs-4
+        </div>
+    </div>
+</div>
+<div class="flex-container row justify-content-center py2">
+    <div class="flex-item col-sm-10">
+        <h3>Ordering Columns</h3>
+
+        <p class="muted">
+            Here we go with this Flexbox thing again. But ordering flex-item`s is a no-brainer.
+        </p>
+    </div>
+</div>
+<div class="flex-container row center pb2">
+    <div class="flex-item col-xs-4 order-xs-3">
+        <div class="bg-light-gray py1">'1' .order-xs-3</div>
+    </div>
+    <div class="flex-item col-xs-4 order-xs-1">
+        <div class="bg-light-gray py1">'2' .order-xs-1</div>
+    </div>
+    <div class="flex-item col-xs-4 order-xs-2">
+        <div class="bg-light-gray py1">'3' .order-xs-2</div>
+    </div>
+</div>
+<hr/>
+</div>
+<!-- /.container -->
+</section>
+
+<section id="typography">
+    <div class="container px1">
+        <div class="flex-container row justify-content-center py2">
+            <div class="flex-item col-sm-10">
+                <h2>Typography</h2>
+
+                <p class="muted">
+                    Some basic styles.
+                </p>
+            </div>
+        </div>
+        <div class="flex-container row justify-content-center pb2">
+            <div class="flex-item col-sm-9">
+                <h1 class="center">Typography</h1>
+
+                <h2 class="center">Header 2</h2>
+
+                <h3 class="center">Header 3</h3>
+                <h4 class="center">Header 4</h4>
+                <h5 class="center">Header 5</h5>
+
+                <p class="h2 center">
+                    <span class="caps">Caps</span>
+                    <span class="italic">Italic</span>
+                    <span class="bold">Bold</span>
+                    <span class="regular">Regular</span>
+                </p>
+
+                <p class="leading-2 f4">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et
+                    ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                    ipsum
+                    dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                    dolore
+                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    Stet
+                    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+        </div>
+        <hr/>
+    </div>
+    <!-- /.container -->
+</section>
+
+<section id="buttons">
+    <div class="container px1">
+        <div class="flex-container row justify-content-center py2">
+            <div class="flex-item col-sm-10">
+                <h2>Buttons</h2>
+
+                <p class="muted">
+                    Awesome standalone Buttons with new Ghostbuttons Extension.
+                </p>
+            </div>
+        </div>
+        <div class="flex-container row justify-content-center pb2">
+            <div class="flex-item col-sm-9">
+                <button class="btn mb1">.btn</button>
+                <br>
+                <input type="submit" class="btn blue mr1 mb1" value="Submit Button">
+                <br>
+                <button class="btn blue mb1 mr1">.btn .blue</button>
+                <button class="btn red mb1 mr1">.btn .red</button>
+                <button class="btn orange mr1 mb1">.btn .orange</button>
+                <button class="btn green mb1">.btn .green</button>
+                <br>
+                <button class="btn orange lg mb1 mr1">.btn .orange .lg</button>
+                <button class="btn orange sm mb1">.btn .orange .sm</button>
+                <br>
+                <button class="btn ghost mb1 mr1">.btn .ghost</button>
+                <button class="btn ghost blue mb1 mr1">.btn .ghost .blue</button>
+                <button class="btn ghost red mb1 mr1">.btn .ghost .red</button>
+                <button class="btn ghost orange mb1 mr1">.btn .ghost .orange</button>
+                <button class="btn ghost green mb1 block">.btn .ghost .green .block</button>
+            </div>
+        </div>
+        <hr/>
+    </div>
+    <!-- /.container -->
+</section>
+
+<section id="components">
+    <div class="container px1">
+        <div class="flex-container row justify-content-center py2">
+            <div class="flex-item col-sm-10">
+                <h2>Components</h2>
+
+                <p class="muted">
+                    Create many different Components without writing any new CSS.<br/>
+                    Take this example of the Media Object done with Flexbox and normal floating div`s.
+                </p>
+            </div>
+        </div>
+        <div class="flex-container row justify-content-center pb2">
+            <div class="flex-item col-sm-10 col-md-6">
+                <div class="flex-container mb1">
+                    <div class="flex-item col-xs-4 col-sm-3">
+                        <div class="h2 bold center bg-blue py2 white rounded">test</div>
+                    </div>
+                    <div class="flex-item col-xs-8 col-sm-9">
+                        <div class="bg-white p1 ml2">
+                            <h2 class="h3">Lorem ipsum</h2>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam
+                                et
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-container row justify-content-center pb2">
+            <div class="flex-item col-sm-10 col-md-6">
+                <div class="oh mb1">
+                    <div class="h2 left p2 mr2 bold white bg-blue rounded">test</div>
+                    <div class="oh bg-white p1">
+                        <h2 class="h3">Lorem Ipsum</h2>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-container row justify-content-center pb2">
+            <div class="flex-item col-xs-12 col-sm-10">
+                <div class="bg-remember rounded mb1 p1 white">
+                    <h2 class="h2">Box</h2>
+
+                    <strong>
+                        Cool looking Box with some Buzz texts.
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+
+<section id="call_to_action" class="mb3">
+    <div class="container px1">
+        <div class="mt4 mb4 center">
+            <h1 class="h2">Start now</h1>
+
+            <p class="leading-3 h3">
+                View project on github.
+            </p>
+            <a href="https://github.com/alexander-ruehle/bobscss" target="_blank" class="btn red lg mt2">
+                <i class="fa fa-github"></i> BobScss on Github
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="modal">
+    <div class="container px1">
+        <div class="flex-container row justify-content-center py2">
+            <div class="flex-item col-sm-10">
+                <h2>Modal Dialogs</h2>
+
+                <p class="muted">
+                    Bla bla Mr. freeman
+                </p>
+            </div>
+        </div>
+        <div class="flex-container row justify-content-center pb2">
+            <div class="flex-item col-sm-9">
+                <a href="#modal-dialog" class="btn raise-1">Show Modal</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
 </html>

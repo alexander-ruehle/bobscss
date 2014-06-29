@@ -1,0 +1,134 @@
+// Typography
+
+body {
+  color: $text-color;
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+// Sneaky color for background selection ;-)
+::selection {
+  background: $selection-color;
+}
+
+::-moz-selection {
+  background: $selection-color;
+}
+
+// Typography Sizes
+h1,
+.h1,
+.f1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+h2,
+.h2,
+.f2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h3,
+.h3
+.f3 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+h4,
+.f4,
+h5,
+.f5,
+h6
+.f6 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+// Responsive Typography Sizes
+
+@media screen and (min-width: $screen-sm) {
+  h1,
+  .h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  h2,
+  .h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  h3,
+  .h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  h1,
+  .h1 {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+  h2,
+  .h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+// Utilities
+
+strong,
+.bold {
+  font-weight: bold;
+}
+
+.regular {
+  font-weight: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.center {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+small,
+.small {
+  font-size: .875rem;
+  line-height: 1.5rem;
+}
+
+// Leading Utilities
+
+.leading-1 {
+  line-height: 1.5rem;
+}
+
+.leading-2 {
+  line-height: 2rem;
+}
+
+.leading-3 {
+  line-height: 3rem;
+}
+
+.leading-4 {
+  line-height: 4rem;
+}

@@ -1,0 +1,67 @@
+// Basic Theme
+
+// Standard Colors
+
+.muted {
+  color: $muted-color;
+}
+
+.white {
+  color: #fff;
+}
+
+.blue {
+  color: $blue;
+}
+
+.light-gray {
+  color: $light-gray;
+}
+
+.mid-gray {
+  color: $mid-gray;
+}
+
+.dark-gray {
+  color: $dark-gray;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-light-gray {
+  background-color: $light-gray;
+}
+
+.bg-mid-gray {
+  background-color: $mid-gray;
+}
+
+.bg-dark-gray {
+  background-color: $dark-gray;
+}
+
+// Links
+
+a {
+  color: $blue;
+  text-decoration: none;
+  &:hover {
+    color: darken($blue, 10%);
+  }
+}
+
+// Fancy Colors
+
+.bg-remember {
+  background-color: $remember-color;
+}
+
+.bg-learning {
+  background-color: $learning-color;
+}
