@@ -3,6 +3,7 @@
 .btn {
   appearance: none;
   -webkit-appearance: none;
+  @include border-box();
   border: none;
   border-radius: .2rem;
   color: inherit;
@@ -127,6 +128,7 @@
     padding: 0 1rem;
   }
   &.block {
+    text-align: center;
     width: 100%;
   }
 }

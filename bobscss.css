@@ -1463,6 +1463,9 @@ img.center {
 .btn {
   appearance: none;
   -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   border: none;
   border-radius: .2rem;
   color: inherit;
@@ -1581,6 +1584,7 @@ img.center {
   padding: 0 1rem;
 }
 .btn.block {
+  text-align: center;
   width: 100%;
 }
 
