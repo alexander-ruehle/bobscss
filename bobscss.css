@@ -1103,10 +1103,14 @@ img.center {
 }
 
 .rounded {
-  border-radius: .3rem;
+  -moz-border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  border-radius: 0.3rem;
 }
 
 .round {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -1577,6 +1581,13 @@ img.center {
 .btn.ghost.green:hover {
   color: white;
 }
+.btn.circle {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
 .btn.lg {
   padding: 1rem 1.8rem;
 }
@@ -1594,7 +1605,9 @@ img.center {
 .form .form-group .input {
   appearance: none;
   border: 1px solid #777777;
-  border-radius: .25rem;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
   height: 3rem;
   line-height: 2rem;
   padding: .5rem;
@@ -1603,7 +1616,9 @@ img.center {
   width: 100%;
 }
 .form .form-group .select {
-  border-radius: .25rem;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
   display: block;
   height: 3rem;
   margin-right: 0;
@@ -1611,7 +1626,9 @@ img.center {
   width: 100%;
 }
 .form .form-group .textarea {
-  border-radius: .25rem;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
   display: block;
   line-height: 1.5rem;
   padding: .5rem;

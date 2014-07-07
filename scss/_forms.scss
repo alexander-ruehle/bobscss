@@ -7,7 +7,7 @@
     .input {
       appearance: none;
       border: 1px solid $mid-gray;
-      border-radius: .25rem;
+      @include border-radius(.25rem);
       height: 3rem;
       line-height: 2rem;
       padding: .5rem;
@@ -18,7 +18,7 @@
     }
 
     .select {
-      border-radius: .25rem;
+      @include border-radius(.25rem);
       display: block;
       height: 3rem;
       margin-right: 0;
@@ -27,7 +27,7 @@
     }
 
     .textarea {
-      border-radius: .25rem;
+      @include border-radius(.25rem);
       display: block;
       line-height: 1.5rem;
       padding: .5rem;

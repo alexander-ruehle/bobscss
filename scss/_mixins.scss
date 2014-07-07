@@ -1,6 +1,5 @@
 // Basic Mixins
 
-// Flexbox Mixins
 @mixin border-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -19,4 +18,10 @@
   -moz-transition: -moz-transform $transition;
   -o-transition: -o-transform $transition;
   transition: transform $transition;
+}
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
 }
