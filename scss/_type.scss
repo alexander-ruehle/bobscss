@@ -105,6 +105,10 @@ strong,
   text-align: center;
 }
 
+.justify {
+  text-align: justify;
+}
+
 .right-align {
   text-align: right;
 }
@@ -112,7 +116,7 @@ strong,
 small,
 .small {
   font-size: .875rem;
-  line-height: 1.5rem;
+  line-height: 1.3rem;
 }
 
 // Leading Utilities
