@@ -4,53 +4,91 @@
   font-size: 1rem;
 
   .form-group {
-    .input {
-      appearance: none;
-      border: 1px solid $mid-gray;
-      @include border-radius(.25rem);
-      height: 3rem;
-      line-height: 2rem;
-      padding: .5rem;
-      max-width: 100%;
-
-      display: block;
-      width: 100%;
-    }
-
+    .field,
+    .input,
     .select {
-      @include border-radius(.25rem);
-      display: block;
+      @include border-box();
+      max-width: 100%;
       height: 3rem;
-      margin-right: 0;
-      margin-left: 0;
-      width: 100%;
-    }
-
-    .textarea {
-      @include border-radius(.25rem);
-      display: block;
       line-height: 1.5rem;
-      padding: .5rem;
-      width: 100%;
     }
-
     .input,
     .select,
     .textarea {
-      @include border-box();
-      &.error {
-        &:not(:focus) {
-          &:invalid {
-            background-color: lighten($danger-color, 15%);
-          }
-          &:valid {
-            background-color: lighten($success-color, 15%);
-          }
-        }
+      border-style: solid;
+      border-width: 1px;
+    }
+    .select {
+      margin-right: 0;
+      margin-left: 0;
+      &[multiple] {
+        height: auto;
       }
+    }
+    .input {
+      padding: .375rem .75rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    .textarea {
+      @include border-box();
+      padding: .75rem;
+      line-height: 1.5;
+    }
+    .input,
+    .textarea,
+    .select {
+      background-color: white;
+      @include transition(box-shadow .2s ease);
+      border-color: $mid-gray;
+      @include border-radius(.25rem);
       &:focus {
         outline: none;
-        border-color: $dark-gray;
+        border-color: $blue;
+        @include box-shadow(0 0 .125rem rgba($blue, .5));
+      }
+    }
+    .radio input,
+    .checkbox input {
+      @include transition(box-shadow .2s ease);
+      &:focus {
+        outline: none;
+        @include box-shadow((0 0 0 2px #fff, 0 0 1px 4px rgba($blue, .5)));
+      }
+    }
+    .radio input {
+      @include border-radius(50%);
+    }
+    .fieldset {
+      border-width: 1px;
+      border-style: solid;
+      border-color: $mid-gray;
+      @include border-radius(.25rem);
+    }
+  }
+
+  &.stacked {
+    .form-group {
+      .label,
+      .input,
+      .select,
+      .checkbox,
+      .radio,
+      .fieldset,
+      .field,
+      .textarea {
+        display: block;
+        width: 100%;
+      }
+      .input,
+      .select,
+      .radio,
+      .checkbox,
+      .fieldset,
+      .field,
+      .textarea {
+        margin-bottom: 1rem;
       }
     }
   }

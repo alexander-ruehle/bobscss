@@ -442,7 +442,7 @@
                     </strong>
 
                     <div class="cf">
-                        <a href="#" class="btn raise-2 right caps">cta!</a>
+                        <a href="#" class="btn right caps">cta!</a>
                     </div>
                 </div>
             </div>
@@ -464,30 +464,35 @@
         </div>
         <div class="flex-container row justify-content-center pb2">
             <div class="flex-item col-xs-10 col-sm-9 col-md-8 col-lg-7">
-                <form class="form bg-white p1">
+                <form class="form stacked bg-white p1">
                     <div class="form-group">
-                        <label for="email_address" class="label block">Email:</label>
-                        <input type="email" name="email" id="email_address" class="input mb1" required
+                        <label for="email_address" class="label">Email:</label>
+                        <input type="email" name="email" id="email_address" class="input" required
                                autocomplete="email" placeholder="Email-Address"/>
                     </div>
                     <div class="form-group">
-                        <label for="password" class="label block">Password:</label>
-                        <input type="password" name="password" id="password" class="input mb1" required
+                        <label for="password" class="label">Password:</label>
+                        <input type="password" name="password" id="password" class="input" required
                                placeholder="Password"/>
                     </div>
                     <div class="form-group">
-                        <label for="social" class="label block">Social Media:</label>
-                        <select id="social" class="select mb1" required>
+                        <label for="social" class="label">Social Media:</label>
+                        <select id="social" class="select" required>
                             <option value="google+">Google+</option>
                             <option value="twitter">Twitter</option>
-                            <option value="fc">Faceboon</option>
+                            <option value="fc">Facebook</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="text" class="label block">Textarea:</label>
-                        <textarea id="text" rows="5" class="textarea mb1"></textarea>
+                        <label for="text" class="label">Textarea:</label>
+                        <textarea id="text" rows="5" class="textarea" placeholder="Type something..."></textarea>
                     </div>
-                    <input type="submit" class="btn blue mb1 raise-1" value="Login">
+                    <div class="form-group">
+                        <label class="checkbox">
+                            <input type="checkbox"> Remember Me
+                        </label>
+                    </div>
+                    <input type="submit" class="btn blue" value="Login">
                 </form>
             </div>
         </div>
