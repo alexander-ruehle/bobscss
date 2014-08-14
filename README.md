@@ -1,10 +1,16 @@
-# BobScss (v0.1.0)
+# BobScss (v0.2.0)
 Frontend Framework for responsive, mobile first Webapps. Based on Flexbox.
 See [bbo-code.com](http://bbo-code.com/bobscss) for Documentations and Demos.
 
 ## Inspired by
 - [Basscss](http://www.basscss.com/)
 - [Twitter Bootstrap](http://getbootstrap.com/)
+
+## Changelog
+### v0.2.0
+- adds circle buttons
+- refactores forms
+- new positioning utilities
 
 ## Liscence
 Copyright (c) 2014 Alexander Rühle
