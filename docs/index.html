@@ -360,6 +360,8 @@
                 <button class="btn ghost red mb1 mr1">.btn .ghost .red</button>
                 <button class="btn ghost orange mb1 mr1">.btn .ghost .orange</button>
                 <button class="btn ghost green mb1 block">.btn .ghost .green .block</button>
+                <br>
+                <button class="btn green circle mb1">c</button>
             </div>
         </div>
         <hr/>
@@ -424,7 +426,74 @@
                     <strong>
                         Cool looking Box with some Buzz texts.
                     </strong>
+
+                    <div class="cf">
+                        <a href="#" class="btn raise-2 right caps">cta!</a>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="flex-container row justify-content-center pb2">
+            <div class="flex-item col-xs-12 col-sm-10">
+                <div class="bg-white rounded mb1 p1 raise-1">
+                    <h2>Card</h2>
+                    <strong>
+                        Material like Cards.
+                    </strong>
+
+                    <div class="cf">
+                        <a href="#" class="btn right caps">cta!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+
+<section id="forms">
+    <div class="container px1">
+        <div class="flex-container row justify-content-center py2">
+            <div class="flex-item col-sm-10">
+                <h2>Forms</h2>
+
+                <p class="muted">
+                    Simple styles forms with pre defined error styles.
+                </p>
+            </div>
+        </div>
+        <div class="flex-container row justify-content-center pb2">
+            <div class="flex-item col-xs-10 col-sm-9 col-md-8 col-lg-7">
+                <form class="form stacked bg-white p1">
+                    <div class="form-group">
+                        <label for="email_address" class="label">Email:</label>
+                        <input type="email" name="email" id="email_address" class="input" required
+                               autocomplete="email" placeholder="Email-Address"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="label">Password:</label>
+                        <input type="password" name="password" id="password" class="input" required
+                               placeholder="Password"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="social" class="label">Social Media:</label>
+                        <select id="social" class="select" required>
+                            <option value="google+">Google+</option>
+                            <option value="twitter">Twitter</option>
+                            <option value="fc">Facebook</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="text" class="label">Textarea:</label>
+                        <textarea id="text" rows="5" class="textarea" placeholder="Type something..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox">
+                            <input type="checkbox"> Remember Me
+                        </label>
+                    </div>
+                    <input type="submit" class="btn blue" value="Login">
+                </form>
             </div>
         </div>
     </div>
@@ -442,25 +511,6 @@
             <a href="https://github.com/alexander-ruehle/bobscss" target="_blank" class="btn red lg mt2">
                 <i class="fa fa-github"></i> BobScss on Github
             </a>
-        </div>
-    </div>
-</section>
-
-<section id="modal">
-    <div class="container px1">
-        <div class="flex-container row justify-content-center py2">
-            <div class="flex-item col-sm-10">
-                <h2>Modal Dialogs</h2>
-
-                <p class="muted">
-                    Bla bla Mr. freeman
-                </p>
-            </div>
-        </div>
-        <div class="flex-container row justify-content-center pb2">
-            <div class="flex-item col-sm-9">
-                <a href="#modal-dialog" class="btn raise-1">Show Modal</a>
-            </div>
         </div>
     </div>
 </section>

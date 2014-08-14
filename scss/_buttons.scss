@@ -3,6 +3,7 @@
 .btn {
   appearance: none;
   -webkit-appearance: none;
+  @include border-box();
   border: none;
   border-radius: .2rem;
   color: inherit;
@@ -119,6 +120,12 @@
     }
   }
 
+  &.circle {
+    @include border-radius(50%);
+    height: 3rem;
+    width: 3rem;
+  }
+
   // Button Sizes
   &.lg {
     padding: 1rem 1.8rem;
@@ -127,6 +134,7 @@
     padding: 0 1rem;
   }
   &.block {
+    text-align: center;
     width: 100%;
   }
 }

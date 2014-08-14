@@ -1,6 +1,8 @@
 require 'rubygems'
 require 'rake'
 
+# gem install sass
+
 desc 'Compile CSS'
 task :compile do
   system 'sass scss/bobscss.scss:bobscss.css --style expanded'
