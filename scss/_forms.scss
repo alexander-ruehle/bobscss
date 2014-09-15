@@ -83,8 +83,9 @@
           border-width: 1px;
           border-style: solid;
           border-color: $mid-gray;
-          height: 20px;
-          width: 20px;
+          height: 1.25rem;
+          top: 0;
+          width: 1.25rem;
         }
         .check {
           border-width: 2px;
@@ -92,12 +93,12 @@
           border-color: $mid-gray;
           border-top: none;
           border-left: none;
-          height: 24px;
-          left: 6px;
+          height: 1.5rem;
+          left: .375rem;
           opacity: 0;
-          top: -7px;
+          top: -.375rem;
           @include transform(rotate(180deg));
-          width: 12px;
+          width: .75rem;
           &.green {
             border-color: $green;
           }
