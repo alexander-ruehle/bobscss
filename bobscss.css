@@ -1049,6 +1049,10 @@ strong,
   font-weight: normal;
 }
 
+.light {
+  font-weight: 300;
+}
+
 .italic {
   font-style: italic;
 }

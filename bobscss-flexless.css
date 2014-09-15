@@ -2,7 +2,7 @@
 /*
   BobScss
 
-  Flexbox Grid Framework
+  Grid Framework
 
   Made with love by bbo - ©2014 Alexander Rühle
   MIT License http://opensource.org/licenses/MIT
@@ -509,6 +509,10 @@ strong,
 
 .regular {
   font-weight: normal;
+}
+
+.light {
+  font-weight: 300;
 }
 
 .italic {
