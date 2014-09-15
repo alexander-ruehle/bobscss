@@ -50,11 +50,67 @@
       }
     }
     .radio input,
-    .checkbox input {
-      @include transition(box-shadow .2s ease);
-      &:focus {
-        outline: none;
-        @include box-shadow((0 0 0 2px #fff, 0 0 1px 4px rgba($blue, .5)));
+    .checkbox {
+      position: relative;
+      input[type=checkbox] {
+        display: none;
+        &:checked {
+          ~ label {
+            .box {
+              opacity: 0;
+              @include transform(scale(0) rotate(-180deg));
+            }
+            .check {
+              opacity: 1;
+              @include transform(scale(1) rotate(45deg));
+            }
+          }
+        }
+      }
+      label,
+      p {
+        padding-left: 2.5rem;
+      }
+      label {
+        cursor: pointer;
+        span {
+          display: block;
+          left: 0;
+          position: absolute;
+          @include transition(.3s);
+        }
+        .box {
+          border-width: 1px;
+          border-style: solid;
+          border-color: $mid-gray;
+          height: 20px;
+          width: 20px;
+        }
+        .check {
+          border-width: 2px;
+          border-style: solid;
+          border-color: $mid-gray;
+          border-top: none;
+          border-left: none;
+          height: 24px;
+          left: 6px;
+          opacity: 0;
+          top: -7px;
+          @include transform(rotate(180deg));
+          width: 12px;
+          &.green {
+            border-color: $green;
+          }
+          &.blue {
+            border-color: $blue;
+          }
+          &.red {
+            border-color: $red;
+          }
+          &.orange {
+            border-color: $orange;
+          }
+        }
       }
     }
     .radio input {
