@@ -5,10 +5,13 @@ See [bbo-code.com](http://bbo-code.com/bobscss) for Documentations and Demos.
 ## Inspired by
 - [Basscss](http://www.basscss.com/)
 - [Twitter Bootstrap](http://getbootstrap.com/)
+- [Google Material](http://www.google.com/design/)
 
 ## Changelog
 ### v0.2.2
 - adds option to choose flexbox or standard float grid system
+- adds awesome new checkbox design (inspired by Google Material)
+- improves typography
 
 ### v0.2.0
 - adds circle buttons

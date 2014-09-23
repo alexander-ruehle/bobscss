@@ -1049,6 +1049,10 @@ strong,
   font-weight: normal;
 }
 
+.light {
+  font-weight: 300;
+}
+
 .italic {
   font-style: italic;
 }
@@ -1727,18 +1731,90 @@ img.center {
   box-shadow: 0 0 0.125rem rgba(51, 114, 223, 0.5);
 }
 .form .form-group .radio input,
-.form .form-group .checkbox input {
-  -webkit-transition: box-shadow 0.2s ease;
-  -moz-transition: box-shadow 0.2s ease;
-  -o-transition: box-shadow 0.2s ease;
-  transition: box-shadow 0.2s ease;
+.form .form-group .checkbox {
+  position: relative;
 }
-.form .form-group .radio input:focus,
-.form .form-group .checkbox input:focus {
-  outline: none;
-  -webkit-box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(51, 114, 223, 0.5);
-  -moz-box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(51, 114, 223, 0.5);
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(51, 114, 223, 0.5);
+.form .form-group .radio input input[type=checkbox],
+.form .form-group .checkbox input[type=checkbox] {
+  display: none;
+}
+.form .form-group .radio input input[type=checkbox]:checked ~ label .box,
+.form .form-group .checkbox input[type=checkbox]:checked ~ label .box {
+  opacity: 0;
+  -webkit-transform: scale(0) rotate(-180deg);
+  -moz-transform: scale(0) rotate(-180deg);
+  -o-transform: scale(0) rotate(-180deg);
+  transform: scale(0) rotate(-180deg);
+}
+.form .form-group .radio input input[type=checkbox]:checked ~ label .check,
+.form .form-group .checkbox input[type=checkbox]:checked ~ label .check {
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(45deg);
+  -moz-transform: scale(1) rotate(45deg);
+  -o-transform: scale(1) rotate(45deg);
+  transform: scale(1) rotate(45deg);
+}
+.form .form-group .radio input label,
+.form .form-group .radio input p,
+.form .form-group .checkbox label,
+.form .form-group .checkbox p {
+  padding-left: 2.5rem;
+}
+.form .form-group .radio input label,
+.form .form-group .checkbox label {
+  cursor: pointer;
+}
+.form .form-group .radio input label span,
+.form .form-group .checkbox label span {
+  display: block;
+  left: 0;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.form .form-group .radio input label .box,
+.form .form-group .checkbox label .box {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #777777;
+  height: 1.25rem;
+  top: 0;
+  width: 1.25rem;
+}
+.form .form-group .radio input label .check,
+.form .form-group .checkbox label .check {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #777777;
+  border-top: none;
+  border-left: none;
+  height: 1.5rem;
+  left: .375rem;
+  opacity: 0;
+  top: -.375rem;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  width: .75rem;
+}
+.form .form-group .radio input label .check.green,
+.form .form-group .checkbox label .check.green {
+  border-color: #0f9d58;
+}
+.form .form-group .radio input label .check.blue,
+.form .form-group .checkbox label .check.blue {
+  border-color: #3372df;
+}
+.form .form-group .radio input label .check.red,
+.form .form-group .checkbox label .check.red {
+  border-color: #cb4437;
+}
+.form .form-group .radio input label .check.orange,
+.form .form-group .checkbox label .check.orange {
+  border-color: #eea236;
 }
 .form .form-group .radio input {
   -moz-border-radius: 50%;
