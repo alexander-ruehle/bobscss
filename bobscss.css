@@ -1547,6 +1547,7 @@ img.center {
   display: inline-block;
   font-family: inherit;
   font-weight: bold;
+  font-style: normal;
   height: auto;
   line-height: 2rem;
   min-height: 2rem;
